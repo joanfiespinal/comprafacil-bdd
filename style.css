@@ -1,0 +1,157 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #20243a;
+    line-height: 1.6;
+}
+
+header {
+    background: #182848;
+    color: white;
+    padding: 24px 8%;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #61dafb;
+}
+
+header p {
+    margin-bottom: 16px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #61dafb;
+}
+
+main {
+    width: min(1100px, 92%);
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 28px;
+    padding: 28px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #18284812;
+}
+
+h2 {
+    margin-bottom: 14px;
+    color: #182848;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ccd2df;
+    border-radius: 8px;
+    margin: 12px 6px 12px 0;
+    max-width: 100%;
+    width: 320px;
+}
+
+button {
+    padding: 12px 18px;
+    background: #087f8c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #065f68;
+}
+
+#lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.producto {
+    border: 1px solid #e0e5ef;
+    border-radius: 12px;
+    padding: 18px;
+    background: #fff;
+}
+
+.producto h3 {
+    margin-bottom: 8px;
+}
+
+.producto p {
+    margin-bottom: 12px;
+}
+
+.precio {
+    font-size: 1.2rem;
+    color: #087f8c;
+    font-weight: bold;
+}
+
+#lista-carrito {
+    margin: 16px 0;
+}
+
+.item-carrito {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e5ef;
+}
+
+#mensaje-busqueda,
+#mensaje-carrito {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #182848;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 22px 5%;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    input {
+        width: 100%;
+    }
+}
